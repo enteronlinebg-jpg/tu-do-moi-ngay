@@ -20,3 +20,9 @@ SẢN PHẨM
 NỘP BÀI
 - links.csv cột: set,mon,ten_sp,mau,shopid,itemid,link_goc,sub_id2 (set: chinh,set1..set5; mon: chinh,phoi,quan,giay).
 - loi-doc.json dạng {"segments":[{"start","end","text"}]}; câu đầu "Một chiếc <tên món chính>, năm cách phối…".
+
+THUMBNAIL (28/10/2026)
+- Muse KHÔNG làm thumbnail nữa. Claude tạo thumbnail từ chính video bằng cong-cu/lam_thumb_k03.py
+  (khung giây 5.5, tiêu đề "5 CÁCH PHỐI <MÓN>" ở y≈290–520, ảnh thu 80% bên dưới, không cắt mép).
+- Lý do: thumbnail Muse làm có chữ sát mép trên (bị Reels che), sản phẩm bị cắt mép, người mẫu khác video, mất giày.
+- Muse vẫn nộp file thumbnail.jpg? Không cần – bỏ khỏi gói nộp.
