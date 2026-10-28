@@ -1,9 +1,9 @@
 <html><head><meta charset=utf-8><style>
 *{margin:0;padding:0} body{width:1080px;height:1920px;overflow:hidden;background:#BBA99B;position:relative;font-family:"Be Vietnam Pro"}
 #wm{position:absolute;left:560px;top:760px;width:300px;height:300px;opacity:.13}
-#jk{position:absolute;left:40px;top:400px;width:420px;height:370px;object-fit:contain;object-position:center center}
+#jk{position:absolute;left:30px;top:370px;width:440px;height:390px;object-fit:contain;object-position:center center}
 .it{position:absolute;opacity:0;object-fit:contain}
-.md{position:absolute;left:450px;top:300px;width:490px;height:1520px;object-fit:contain;object-position:center bottom;opacity:0}
+.md{position:absolute;left:440px;top:370px;width:550px;height:1530px;object-fit:contain;object-position:center bottom;opacity:0}
 #cap{position:absolute;left:65px;right:140px;top:290px;text-align:center;font-family:"Playfair Display";font-style:italic;font-weight:600;font-size:42px;line-height:1.3;color:#2b211c;text-shadow:0 1px 0 rgba(255,255,255,.35)}
 #end{position:absolute;inset:0;background:#BBA99B;opacity:0;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:380px;box-sizing:border-box}
 #end .s{width:220px;height:220px} #end h1{font-family:"Playfair Display";font-size:96px;color:#121212;margin-top:20px} #end h2{font-size:34px;letter-spacing:12px;color:#8E2330;font-weight:600}
@@ -26,9 +26,9 @@
 <script>
 const O=[["Phối quần jeans ống rộng + Sneaker trắng.", "Phong cách: Năng động, đi học đi làm đều hợp."], ["Phối chân váy xếp ly đen + Boots cổ ngắn.", "Phong cách: Cá tính, chuẩn street style Hàn."], ["Phối quần cargo be + Giày chunky.", "Phong cách: Streetwear thoải mái, đi chơi cả ngày."], ["Phối chân váy maxi trắng + Sandal da.", "Phong cách: Thể thao mix nữ tính, đi biển cực xinh."], ["Phối quần short jean + Sneaker đỏ.", "Phong cách: Trẻ trung, nổi bật khi dạo phố."]];
 const INTRO=1.6, SEG=5.4, N=O.length, END=2.4, TOT=INTRO+SEG*N+END;
-// Bố cục v2 (28/10/2026) theo VÙNG AN TOÀN REELS – xem quy-chuan/TIEU-CHUAN-TY-LE.txt mục 6
-// Món chính 400–770 | Món phối 790–1110 | Giày 1120–1240 (không xuống dưới 1248) | Người mẫu 300–1820, x 450–940
-const BX={x:40,y:790,w:420,h:320}, SX={x:60,y:1120,w:380,h:120};
+// Bố cục v3 – BẢN C (chốt 28/10/2026, người dùng duyệt)
+// Chữ y 290–390 | Món chính x30–470 y370–760 | Món phối (quần/váy) x20–490 y770–1330 | Giày x50–450 y1335–1485 | Người mẫu x440–990 y370–1900
+const BX={x:20,y:770,w:470,h:560}, SX={x:50,y:1335,w:400,h:150};
 function ease(x){return x<0?0:x>1?1:1-Math.pow(1-x,3)}
 function setIt(el,box,p){el.style.left=box.x+'px';el.style.top=box.y+'px';el.style.width=box.w+'px';el.style.height=box.h+'px';el.style.opacity=p;el.style.transform=`translateY(${(1-p)*40}px) scale(${0.94+0.06*p})`}
 window.render=function(t){
