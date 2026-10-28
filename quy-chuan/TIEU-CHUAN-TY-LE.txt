@@ -1,0 +1,39 @@
+TIÊU CHUẨN TỶ LỆ ẢNH – KENH-03 "TỦ ĐỒ MỖI NGÀY" (đo từ video tham chiếu, chốt 23/10/2026)
+Khung video 1080x1920. % tính theo chiều cao (H=1920) và chiều ngang (W=1080).
+
+1. ĐO TỪ VIDEO THAM CHIẾU "Phối đồ xinh mỗi ngày" (mau-phoi-do-co-nguoi-mau.jpg)
+- Người mẫu: cao 81–87% H, đỉnh đầu ngay dưới dòng chữ tiêu đề (~10–12% H), chân ở ~92% H; rộng 35–45% W; nằm nửa phải.
+- Món chính (góc trái trên): cao ~27% H, rộng ~37–40% W.
+- Món phối: áo 14–26% H; quần/váy dài 35–41% H; rộng 30–35% W. Được phép chồng nhẹ lên món chính.
+- Giày: cao ~10% H, rộng 25–30% W.
+- Cột trái lấp kín từ ~15% H đến ~90% H, gần như không có khoảng trống lớn.
+
+2. ĐO TỪ MẪU 002 CỦA KÊNH (mau-002-ao-khoac.jpg)
+- Món chính 26% H × 40% W; món phối 14–26% H × 24–34% W; giày 9–10% H × 20–32% W.
+- Người mẫu 66–71% H (đỉnh 15% H, chân 82% H) – NHỎ HƠN tham chiếu, cần tăng.
+
+3. ĐO TỪ VIDEO ĐÃ LÀM (khung giây 5.5)
+- 012: người mẫu ~68% H (đạt mức 002).
+- 027–053: người mẫu ~50–55% H, món chính và món phối nhỏ → KHÔNG ĐẠT.
+
+4. CHUẨN SẢN XUẤT TỪ NAY (theo tham chiếu)
+- Người mẫu: cao 82–88% H (~1580–1690 px), đỉnh đầu y≈200–240, chân y≈1760–1800; tâm ngang x≈790.
+- Món chính: khung cao ≥ 26% H (≥500 px), rộng ≥ 38% W (≥410 px), góc trái trên y≈300.
+- Món phối: áo ≥ 22% H (≥420 px); quần/váy dài ≥ 35% H (≥670 px); rộng ≥ 32% W.
+- Giày: cao ≥ 9% H (≥175 px), rộng ≥ 27% W (≥290 px).
+- Ảnh fill theo chiều cao khung, không để bbox nhỏ lơ lửng giữa khung.
+
+5. CÁCH KIỂM TRA (Claude làm mỗi lô)
+- Trích khung giây 5.5 của từng video, đo chiều cao người mẫu và các món trên nền be.
+- Người mẫu < 78% H hoặc món chính < 24% H → trả Muse làm lại.
+
+6. VÙNG AN TOÀN REELS (cập nhật 23/10, ưu tiên CAO HƠN mục 4 khi xung đột)
+Khuyến nghị phổ biến cho Reels 1080x1920: chừa trên 14% (270px), dưới 35% (672px), trái/phải 6% (65px); cột nút like/bình luận/chia sẻ ở mép phải khoảng x>940, y 900–1750.
+Đo video hiện tại: dòng chữ "Phong cách…" ở y≈120–170 (bị thanh trên che); giày y≈1390–1590 và chân người mẫu nằm trong vùng chú thích phía dưới (bị caption/tên trang che); nút "Link… bình luận ghim" ở màn kết y≈1230–1270 sát mép vùng che.
+BỐ CỤC MỚI:
+- Chữ tiêu đề / "Phong cách…": y 290–390, x 65–940, tối đa 2 dòng.
+- Món chính: y 400–800 (cao ~400px), x 65–480.
+- Món phối: y 760–1180 (cao ~420px, được chồng nhẹ món chính), x 65–480.
+- Giày: y 1080–1240 (cao ~160px), x 65–480. Giày KHÔNG được xuống dưới y 1248.
+- Người mẫu: đầu y≈300, chân y≈1800–1830 (~78–80% H); chỉ phần chân được nằm trong vùng dưới; x 480–940, không lấn cột nút bên phải.
+- Màn kết: logo + câu hỏi + nút "Link… bình luận ghim" nằm trong y 400–1150.

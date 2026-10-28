@@ -1,0 +1,35 @@
+BẢN CHỐT QUY TRÌNH – KENH-03 "TỦ ĐỒ MỖI NGÀY" (1 MÓN – 5 CÁCH PHỐI)
+Dán vào đầu mỗi đoạn chat Muse mới. Chốt 22/10/2026. Mẫu chuẩn: 002 áo khoác gió, 005 quần ống suông.
+=====================================================================
+
+1. KHUÔN DỰNG (BẮT BUỘC dùng code lb.html + rec.py + cut.py đã gửi, chỉ thay ảnh và chữ)
+- 1080x1920, 31 giây: mở 1,6s → 5 set × 5,4s → màn kết 2,4s.
+- Nền be (#BBA99B), logo mờ hình vòm của kênh, chữ Playfair Display nghiêng trên cùng.
+- Món chính cố định góc trái trên suốt video. Mỗi set: món phối hiện dưới món chính → giày hiện dưới cùng cột trái → NGƯỜI MẪU mặc đúng cả bộ trượt vào bên phải, cao ~85% khung. Chữ đổi "Phối <món> + <giày>." → "Phong cách: <...>."
+- Màn kết: logo Tủ Đồ Mỗi Ngày + "Bạn thích cách phối số mấy?" + nút "Link ... ở bình luận ghim".
+
+2. ẢNH
+- Ảnh sản phẩm: như chụp sản phẩm thật kiểu studio, đúng kiểu dáng và đúng màu của sản phẩm trong links.csv, tách nền sạch. Áo phối ở cột trái và áo người mẫu mặc phải CÙNG MÀU, cùng kiểu.
+- Giày ở cột trái to vừa (ngang ~70% bề rộng món phối).
+- Người mẫu cố định: nữ Việt trẻ, tóc nâu hạt dẻ dài mái thưa, trang điểm Hàn tự nhiên, dáng thon; cùng 1 khuôn mặt mọi video; tư thế sinh động; ảnh như chụp thật.
+- Không chữ/logo thương hiệu giả trên đồ; hàng hiệu thật thì giữ đúng.
+
+3. GU PHỐI
+- Mỗi video 1 bảng màu dịu (old money, Hàn tối giản, pastel...), 5 set khác phong cách: năng động / cá tính / nữ tính / thanh lịch công sở / dạo phố cuối tuần.
+- Theo mùa (cuối 10–11): ưu tiên áo len, cardigan, blazer, áo khoác nhẹ, boots.
+
+4. ÂM THANH
+- Video xuất có track âm thanh IM LẶNG. Không tự tạo nhạc/tiếng bíp. Claude lồng tiếng Vbee sau.
+
+5. LỜI ĐỌC (loi-doc.json, Claude dùng để lồng tiếng)
+- segments đúng mốc: [0,2.6] "Một chiếc <món chính>, năm cách phối cho cả tuần!" · [2.6,7.0] Cách một · [7.0,12.4] Cách hai · [12.4,17.8] Cách ba · [17.8,23.2] Cách bốn · [23.2,28.6] Cách năm · [28.6,30.9] "Bạn thích cách số mấy? Link ... ở bình luận nha!"
+- Mỗi câu ≤ 22 âm tiết, nói màu + món + giày + phong cách, tự nhiên như người thật.
+
+6. SẢN PHẨM VÀ LINK
+- Mỗi video: 1 món chính + 5 món phối + 5 đôi giày (giày được lặp lại tối đa 2 lần). Sản phẩm Shopee bán chạy, đánh giá ≥4.7, có màu đúng như trong video.
+- Chỉ ghi link gốc https://shopee.vn/product/<shopid>/<itemid>. Không link rút gọn, không bấm link nhiều lần. Claude đổi link affiliate.
+- links.csv: set,mon,ten_sp,mau,shopid,itemid,link_goc.
+
+7. NỘP BÀI
+- Mỗi lô 6 video, 1 zip duy nhất: MUSE-K03-LO-<ngày>.zip, mỗi video 1 thư mục <số>-<chủ đề không dấu>/ gồm: video.mp4, thumbnail.jpg (khung đẹp nhất + chữ "5 CÁCH PHỐI <MÓN>"), noi-dung-dang.txt (caption A, caption B, bình luận ghim với {SP:itemid}, tiêu đề + mô tả YouTube #shorts), links.csv, loi-doc.json, tu-cham.txt.
+- Tự chấm: trích 1 khung/giây, kiểm tra người mẫu mặc đúng màu, cùng mặt, không lỗi tay/chữ, đúng khuôn. Chỉ ghi ĐẠT khi đã xem thật.

@@ -1,0 +1,22 @@
+QUY TẮC ĐA DẠNG & SẢN PHẨM – KENH-03 (chốt 28/10/2026)
+
+ĐA DẠNG
+- Mỗi video tối đa 2 món phối/giày trùng với video liền trước; đảo thứ tự giày; mỗi video ≥1 đôi giày khác bộ quen.
+- Mỗi lô 6 video dùng ≥2 bảng màu khác be (đen-trắng, xám-navy, nâu socola, đỏ đô, xanh rêu, hồng phấn-xám, be-camel…).
+- Không làm lại món chính đã có (xem danh sách đã làm 006–053 trong README).
+- Thu đông: hạn chế dép kẹp/sandal và áo hai dây; ưu tiên boots, loafer, búp bê, Mary Jane, oxford, sneaker.
+
+SẢN PHẨM
+- Món nào cũng phải có itemid thật trong links.csv, gồm CẢ quần/váy người mẫu đang mặc (để bình luận ghim mỗi cách đủ Áo / Quần-Váy / Giày).
+- Chỉ chọn tin bán đúng món đó: không tin "QUÀ TẶNG", không phụ kiện thay sản phẩm.
+- CẤM hàng nhái/logo/hoạ tiết thương hiệu: itemid 52903924770, 48852922203; không vẽ 3 sọc kiểu adidas, không monogram LV/Gucci/Dior/Chanel.
+- Sneaker có sọc (56368669701, 43334795510) phải giữ đúng số vạch như ảnh shop.
+- Ảnh cột trái phải khớp 100% với đồ người mẫu: cùng màu, cùng kiểu, cùng tay dài/cộc, cùng đôi giày.
+
+ẢNH
+- Tách nền sạch: không vệt trắng/bóng sàn dưới chân, không móc treo, không lỗ thủng (đặc biệt đồ màu trắng/kem – kiểm tra khe nếp ly).
+- Người mẫu đang bước, cùng một gương mặt mọi video.
+
+NỘP BÀI
+- links.csv cột: set,mon,ten_sp,mau,shopid,itemid,link_goc,sub_id2 (set: chinh,set1..set5; mon: chinh,phoi,quan,giay).
+- loi-doc.json dạng {"segments":[{"start","end","text"}]}; câu đầu "Một chiếc <tên món chính>, năm cách phối…".
